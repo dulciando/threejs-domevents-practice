@@ -31,7 +31,7 @@
                 scene.add(sphere)
 
                 camera.position.z = 70
-
+                //domEvents library
                 const domEvents = new THREEx.DomEvents (camera, renderer.domElement)
                 domEvents.addEventListener(sphere, 'mouseover', event =>{
                     material.wireframe = false
@@ -51,7 +51,7 @@
                     }
                     
                 })
-
+                //Orbit Controls
                 controls = new THREE.OrbitControls(camera, renderer.domElement)
                 controls.minDistance = 50
                 controls.maxDistance = 100
